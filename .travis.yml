@@ -5,10 +5,10 @@ services:
 - docker
 matrix:
   include:
-  - node_js: 6.9.4
-  - node_js: 6.9.4
+  - node_js: 8.3.0
+  - node_js: 8.3.0
     env: SAUCE=true
-  - node_js: 6.9.4
+  - node_js: 8.3.0
     env: INTEGRATION=true
 script:
 - |
@@ -58,7 +58,7 @@ deploy:
     on:
       tags: true
       repo: stellar/js-stellar-sdk
-      node: 6.9.4
+      node: 8.3.0
       condition: "$INTEGRATION = true"
   - provider: script
     script: "./bower_publish.sh"
@@ -66,5 +66,5 @@ deploy:
     on:
       tags: true
       repo: stellar/js-stellar-sdk
-      node: 6.9.4
+      node: 8.3.0
       condition: "$INTEGRATION = true"
