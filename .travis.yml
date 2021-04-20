@@ -10,8 +10,6 @@ matrix:
     env: SAUCE=true
   - node_js: 6.9.4
     env: INTEGRATION=true
-before_install:
-- npm install -g npm@'>=2.13.5'
 script:
 - |
   echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
