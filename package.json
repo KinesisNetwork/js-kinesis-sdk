@@ -76,7 +76,7 @@
     "webpack": "^5.32.0"
   },
   "dependencies": {
-    "axios": "^0.12.0",
+    "axios": "^0.21.0",
     "bluebird": "^3.7.2",
     "es6-promise": "^4.2.8",
     "event-source-polyfill": "1.0.22",
